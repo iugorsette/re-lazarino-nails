@@ -18,7 +18,7 @@ export function Header() {
         Especialista em fibra de vidro
       </p>
     </div>
-    <div className="p-2 bg-zinc-100 flex justify-center md:justify-end">
+    <div className="p-2 flex justify-center md:justify-end">
       <a
         target="_blank"
         href="https://www.instagram.com/renatalazarinonails/"

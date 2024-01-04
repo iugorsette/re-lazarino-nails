@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         'green-local-300':'#00B37E',
         'green-local-500':'#00875f',
-        'pink-local-500': '#E18484',
+        'pink-local-500': '#EF94b5',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
