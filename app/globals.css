@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --default-color: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --default-color: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.neon-btn {
+  color: var(--default-color);
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+  padding: 1rem 1rem;
+}
+
+.neon-btn::before {
+  color: #ffffff;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,  #ff00ea, #ff92ff);
+  opacity: 0;
+  z-index: -1;
+  animation: neonAnimation 1s infinite alternate;
+  animation-timing-function: ease-in-out; 
+}
+
+.neon-btn:hover::before {
+  opacity: 1;
+}
+@keyframes neonAnimation {
+  0% {
+    background: linear-gradient(10deg, #ff00ea, #ff92ff);
+  }
+  10% {
+    background: linear-gradient(20deg, #ff00ea, #ff92ff);
+  }
+  20% {
+    background: linear-gradient(30deg, #ff00ea, #ff92ff);
+  }
+  30% {
+    background: linear-gradient(40deg, #ff00ea, #ff92ff);
+  }
+  40% {
+    background: linear-gradient(50deg, #ff00ea, #ff92ff);
+  }
+  50% {
+    background: linear-gradient(60deg, #ff00ea, #ff92ff);
+  }
+  60% {
+    background: linear-gradient(70deg, #ff00ea, #ff92ff);
+  }
+  70% {
+    background: linear-gradient(80deg, #ff00ea, #ff92ff);
+  }
+  80% {
+    background: linear-gradient(90deg, #ff00ea, #ff92ff);
+  }
+  90% {
+    background: linear-gradient(100deg, #ff00ea, #ff92ff);
+  }
+  100% {
+    background:  linear-gradient(110deg,  #ff00ea, #ff92ff);
+  }
+}
