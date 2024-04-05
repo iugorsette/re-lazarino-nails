@@ -34,6 +34,7 @@ export function Technologies() {
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left gap-2">
         {techData.map((tech) => (
           <a
+            key={tech.name}
             className={`group rounded-lg border border-gray-300 px-5 py-4 transition-colors hover:border-pink-600 hover:bg-gray-100 hover:dark:bg-neutral-800/30`}
             target="_blank"
             rel="noopener noreferrer"
