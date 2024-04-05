@@ -9,7 +9,7 @@ export function Technologies() {
     },
     {
       name: "Nail Art",
-      imagem: "/image-2.png",
+      imagem: "/image-12.png",
       description: "Oferecemos uma variedade de opções, desde a esmaltação total até a clássica francesinha e muito mais. Deixe suas unhas brilharem com estilo e personalidade!",
     },
     {
@@ -22,7 +22,57 @@ export function Technologies() {
       name: "Francesinha + encapsulada",
       imagem: "/image-4.png",
       description: "Unhas almond encapsuladas em estilo francesinha, alternando entre branco clássico e brilhos cintilantes. Elegância e glamour em uma manicure única.",
-    }
+    },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-5.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-6.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-7.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-8.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-9.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-10.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-11.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-12.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-13.png",
+    //   description: " ",
+    // },
+    // {
+    //   name: "Aplicação decorada",
+    //   imagem: "/image-14.png",
+    //   description: " ",
+    // }
   ];
 
   return (
@@ -35,11 +85,11 @@ export function Technologies() {
         {techData.map((tech) => (
           <div
             key={tech.name}
-            className={`flex flex-col justify-center items-center group rounded-lg border border-gray-300 px-5 py-4 transition-colors hover:border-pink-600 hover:bg-gray-100 hover:dark:bg-neutral-800/30`}
+            className={`flex flex-col content-start items-center group rounded-lg border border-gray-300 px-5 py-4 transition-colors hover:border-pink-600 hover:bg-gray-100 hover:dark:bg-neutral-800/30`}
           >
          
             <Image
-              className=" items-center justify-center rounded-lg"
+              className=" items-center rounded-lg object-cover h-48 w-96"
               src={tech.imagem}
               alt="Renata Lazarino"
               width={200}
