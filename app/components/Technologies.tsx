@@ -20,7 +20,7 @@ export function Technologies() {
     },
     {
       name: "Francesinha + encapsulada",
-      imagem: "/image-4.png",
+      imagem: "/image-11.png",
       description: "Unhas almond encapsuladas em estilo francesinha, alternando entre branco clássico e brilhos cintilantes. Elegância e glamour em uma manicure única.",
     },
     // {
