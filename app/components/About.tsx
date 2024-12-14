@@ -35,8 +35,8 @@ export function About() {
           target="_blank"
           href="https://wa.me/31971630379"
         >
-          Tabela de precos
-        </button>
+          Entrar em contato
+        </a>
       </div>
     </div>
   );
