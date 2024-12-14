@@ -32,6 +32,7 @@ export function About() {
         <button
           className="neon-btn bg-rose-600 text-white font-bold py-2 px-4 rounded mt-8 w-64 self-center"
           type="button"
+          disabled
           onClick={downloadcv}
         >
           Tabela de precos
