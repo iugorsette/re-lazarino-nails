@@ -29,11 +29,11 @@ export function About() {
       </p>
 
       <div className="w-full flex justify-center">
-        <button
+        <a
           className="neon-btn bg-rose-600 text-white font-bold py-2 px-4 rounded mt-8 w-64 self-center"
           type="button"
-          disabled
-          onClick={downloadcv}
+          target="_blank"
+          href="https://wa.me/31971630379"
         >
           Tabela de precos
         </button>
